@@ -145,7 +145,7 @@ html(lang="ru")
 										p.case__count 90
 										p.case__text Завершено крупных сделок
 										a(href="#") Все кейсы
-			section.clients
+			section.clients#clients
 				.container
 					h2.small-heading Наши клиенты
 					p.big-heading С нами работают
@@ -252,12 +252,14 @@ html(lang="ru")
 						.col-md-6
 							form
 								.name.d-sm-flex.justify-content-between
-									label
-										p Имя
-										input(type="text" name="name" placeholder="Иван")
-									label
-										p Фамилия
-										input(type="text" name="surname" placeholder="Иванов")
+									.input-field
+										label
+											p Имя
+											input(type="text" name="name" placeholder="Иван")
+									.input-field
+										label
+											p Фамилия
+											input(type="text" name="surname" placeholder="Иванов")
 								.message
 									label
 										p Сообщение

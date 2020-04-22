@@ -65,6 +65,11 @@ header {
             margin: 0;
             padding: 10px 0;
             list-style: none;
+            display:flex;
+            justify-content:space-between;
+            @media screen and(max-width:992px){
+                display:block;
+            }
         }
         li {
             display: block;
@@ -405,7 +410,7 @@ header {
 
 .form{
     color:#fff;
-    padding: 100px 0 140px;
+    padding: 100px 0 40px;
     background: url("../img/main-bg.jpg");
     @media screen and(max-width:992px){
         background-size: cover;
@@ -451,7 +456,7 @@ header {
                 outline: none;
             }
         }
-        & label{
+        & .input-field{
             flex-grow: .4;
             border-bottom:1px solid #fff;
             margin-bottom: 35px;
@@ -462,10 +467,15 @@ header {
             }
         }
         & .message{
+            border-bottom:1px solid #fff;
+            height: 150px;
             & label{
                 & p{
                     margin: 0;
                 }
+            }
+            & textarea{
+                height: 150px;
             }
         }
         & input[type='submit']{
